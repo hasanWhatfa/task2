@@ -1,0 +1,43 @@
+.faqsContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+.faqsContainer .faqsRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 48.42968%;
+}
+@media (max-width:1919px){
+    .faqsContainer{
+        gap: 40px;
+    }
+    .faqsContainer .faqsRow{
+        gap: 24px;
+        width:48.4375%;
+    }
+}
+@media (max-width:992px) {
+    .faqsContainer{
+        /* need change */
+        gap: 30px;
+        flex-direction: column;
+    }
+    .faqsContainer .faqsRow{
+        gap: 24px;
+        width:100%;
+    }
+}
+@media (max-width:768px) {
+    .faqsContainer{
+        gap: 20px;
+    }
+    .faqsContainer .faqsRow{
+        gap: 20px;
+    }
+}

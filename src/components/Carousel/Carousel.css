@@ -1,0 +1,116 @@
+.CarouselContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.caroselCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 86.432160%;
+}
+.CarouselContainer > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 2px solid var(--text-light-g20);
+    border-radius: 8px;
+    background-color: var(--white);
+    max-height: 58px;
+    cursor: pointer;
+    transition: 300ms;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.CarouselContainer > button:hover{
+    background-color: var(--orange75);
+}
+@media (max-width:1919px){
+    /* the crads contaier is 1,100px width from 1276px so 86% is very close*/
+    .caroselCardContainer{
+        gap: 40px;
+        width: 86%;
+    }
+    .CarouselContainer > button{
+        padding: 10px;
+        max-height: 48px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+@media (max-width:1439px){
+    .caroselCardContainer{
+        gap:30px;
+        width: 88%;
+    }
+    .CarouselContainer > button{
+        padding: 8px;
+        max-height: 45px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+@media (max-width:992px){
+    .caroselCardContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        padding: 0px 80px;
+    }
+    .caroselCardContainer .CarouselCard:first-child,.caroselCardContainer .CarouselCard:last-child{
+        display: none;
+    }
+    .CarouselContainer > button{
+        position: absolute;
+        bottom: -98px;
+    }
+    .CarouselContainer > .preBtn{
+        left:42%
+    }
+    .CarouselContainer > .nextBtn{
+        right: 42%;
+    }
+}
+@media (max-width:768px) {
+    .CarouselContainer{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+    }
+    .caroselCardContainer{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap: 0;
+        width:100%;
+        padding: 0;
+
+    }
+    .CarouselContainer > button{
+        padding: 12px;
+        max-height: 48px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .CarouselContainer > .preBtn{
+        left:121px;
+    }
+    .CarouselContainer > .nextBtn{
+        right:121px;
+    }
+}

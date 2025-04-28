@@ -1,0 +1,102 @@
+.TitleComp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    padding: 0 300px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.TitleComp .TitleQoute{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--text-light-g20);
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: 300ms;
+}
+.TitleComp .TitleQoute:hover{
+    color: var(--white);
+    background-color: var(--text-light-g20);
+}
+.TitleComp .SectionTitle{
+    font-family: var(--headings-font);
+    font-size: 58px;
+    line-height: 130%;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: 300ms;
+}
+.TitleComp .SectionTitle:hover{
+    scale: 1.1;
+}
+.TitleComp .TitleDesc{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+}
+
+
+@media (max-width:1919px){
+    .TitleComp{
+        gap: 14px;
+        padding: 0 200px;
+        margin-bottom: 80px;
+    }
+    .TitleComp .TitleQoute{
+        font-size: 16px;
+        padding: 8px 14px;
+        border-radius: 6px;
+    }
+    .TitleComp .SectionTitle{
+        font-size: 48px;
+    }
+    .TitleComp .TitleDesc{
+        font-size: 16px;
+    }
+}
+@media (max-width:1439px){
+    .TitleComp{
+        gap: 14px;
+        padding: 0 110px;
+        margin-bottom: 80px;
+    }
+    .TitleComp .TitleQoute{
+        font-size: 14px;
+    }
+    .TitleComp .SectionTitle{
+        font-size: 38px;
+    }
+    .TitleComp .TitleDesc{
+        font-size: 14px;
+    }
+}
+@media (max-width:992px){
+    .TitleComp{
+        gap: 16px;
+        padding: 0 80px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width:768px){
+    .TitleComp{
+        gap: 10px;
+        padding:0;
+        margin-bottom: 50px;
+    }
+    .TitleComp .TitleQoute{
+        font-size: 14px;
+        padding: 8px 14px;
+        border-radius: 6px;
+    }
+    .TitleComp .TitleDesc{
+        font-size: 16px;
+    }
+}

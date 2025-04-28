@@ -1,0 +1,231 @@
+.Hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: calc(100vh - 174px);
+    gap: 3.78%;
+    padding-top: 140px;
+}
+.Hero .MainHeroImage{
+    width: 48.053%;
+    animation: opacityChangeL2R 500ms linear 0s 1 normal;
+    transition: 300ms;
+}
+.Hero .MainHeroImage:hover{
+    transform: scale(1.01);
+    box-shadow:0px 0px 20px 0px var(--orange65);
+}
+.Hero .heroTextContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: opacityChangeR2L 500ms linear 0s 1 normal;
+}
+.heroTextContainer .WelcomeSen{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    padding-bottom:6px;
+    border-bottom: 2px solid var(--grey15);
+    color: var(--grey15);
+}
+.heroTextContainer > h2{
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 130%;
+    font-family: var(--headings-font);
+    color: var(--text-dark);
+    span{
+        color: var(--orange65);
+    }
+}
+.heroTextContainer .HeroDesc{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+    margin-top: 30px;
+}
+.heroTextContainer .heroClacsContainer{
+    display: flex;
+    align-items: center;
+    padding: 24px 50px;
+    gap: 13px;
+    border-radius: 12px;
+    background-color: var(--orange95);
+    border: 2px solid var(--grey15);
+    margin-top: 60px;
+    box-shadow: 8px 8px 0px 1px var(--orange80);
+    transition: 300ms;
+}
+.heroTextContainer .heroClacsContainer:hover{
+    transform: translate(-8px,-8px);
+    box-shadow: 16px 16px 0px 1px var(--orange80);
+}
+/* some simple animations */
+@keyframes opacityChangeL2R {
+    from{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes opacityChangeR2L {
+    from{
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Start */
+@media (max-width:1919px) {
+    .Hero{
+        gap:3.90%;
+        padding-top: 120px;
+    }
+    .Hero .MainHeroImage{
+        width: 48.047%;
+    }
+    .heroTextContainer .WelcomeSen{
+        font-size: 18px;
+    }
+    .heroTextContainer > h2{
+        font-size: 40px;
+    }
+    .heroTextContainer .HeroDesc{
+        font-size: 16px;
+        margin-top:20px;
+    }
+    .heroTextContainer .heroClacsContainer{
+        padding: 20px 40px;
+        gap: 13px;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: 6px 6px 0px 1px var(--orange80);
+    }
+    .heroTextContainer .heroClacsContainer:hover{
+        transform: translate(-6px,-6px);
+        box-shadow: 12px 12px 0px 1px var(--orange80);
+    }
+}
+
+
+@media (max-width:1439px) {
+    .Hero{
+        gap:4%;
+        padding-top:80px;
+    }
+    .Hero .MainHeroImage{
+        width: 40%;
+    }
+    .heroTextContainer .WelcomeSen{
+        font-size: 16px;
+    }
+    .heroTextContainer > h2{
+        font-size: 38px;
+    }
+    .heroTextContainer .HeroDesc{
+        font-size: 14px;
+        margin-top:15px;
+    }
+    .heroTextContainer .heroClacsContainer{
+        padding: 18px 38px;
+        gap: 11px;
+        border-radius: 8px;
+        margin-top: 40px;
+        box-shadow: 6px 6px 0px 1px var(--orange80);
+    }
+}
+@media (max-width:1200px) {
+    .heroTextContainer .WelcomeSen{
+        font-size: 16px;
+    }
+    .heroTextContainer > h2{
+        font-size: 34px;
+    }
+    .heroTextContainer .HeroDesc{
+        font-size: 14px;
+        margin-top:15px;
+    }
+    .heroTextContainer .heroClacsContainer{
+        padding: 15px 30px;
+        gap: 10px;
+        border-radius: 8px;
+        margin-top: 30px;
+        box-shadow: 6px 6px 0px 1px var(--orange80);
+    }
+}
+@media (max-width:992px) {
+    /* can be improved later */
+    .heroTextContainer .WelcomeSen{
+        font-size: 14px;
+    }
+    .heroTextContainer > h2{
+        font-size: 28px;
+    }
+    .heroTextContainer .HeroDesc{
+        font-size: 14px;
+        margin-top:10px;
+    }
+    .heroTextContainer .heroClacsContainer{
+        padding: 12px 24px;
+        gap: 9px;
+        border-radius: 8px;
+        margin-top:18px;
+        box-shadow: 6px 6px 0px 1px var(--orange80);
+    }
+}
+
+
+@media (max-width:768px) {
+    .Hero{
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 120px;
+    }
+    .Hero .MainHeroImage{
+        width: 100%;
+    }
+    .Hero .heroTextContainer{
+        align-items: center;
+        text-align: center;
+    }
+    .heroTextContainer .WelcomeSen{
+        font-size: 16px;
+    }
+    .heroTextContainer > h2{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .heroTextContainer .HeroDesc{
+        font-size: 16px;
+        margin-top: 18px;
+    }
+    .heroTextContainer .heroClacsContainer{
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 40px;
+        gap: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+        box-shadow: 4px 4px 0px 1px var(--orange80);
+    }
+    .heroTextContainer .heroClacsContainer:hover{
+        transform: translate(-4px,-4px);
+        box-shadow: 8px 8px 0px 1px var(--orange80);
+    }
+    .line:not(:last-child){
+        width: 100%;
+        height: 2px;
+        background-color: var(--grey15);
+    }
+}

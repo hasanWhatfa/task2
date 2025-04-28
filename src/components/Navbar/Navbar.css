@@ -1,0 +1,296 @@
+header{
+    padding: 18px 2.6045% 0;
+    z-index: 1000;
+}
+.bgScreenNav{
+    padding: 0 2.6045%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 1000;
+    transition: 500ms;
+}
+.navContent{
+    border: 2px solid var(--grey15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+.navContent .logoConatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:7px;
+    background-color: var(--orange65);
+    color: var(--grey15);
+    padding: 20px 24px;
+    border-right: 2px solid var(--grey15);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.bgScreenNav .navLinks{
+    width: 50.771%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    list-style: none;
+    li{
+        padding: 25px 32px;
+        border-left: 2px solid var(--grey15);
+        height: 100%;
+        cursor: pointer;
+        transition: 300ms;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 150%;
+            color: var(--grey15);
+        }
+    }
+}
+.bgScreenNav .navLinks li:hover{
+    background-color: var(--orange95);
+}
+.bgScreenNav .navLinks li:last-child{
+    background-color: var(--orange75);
+}
+
+.activeNavLink{
+    background-color: var(--orange95);
+}
+.showMenuNav{
+    display: flex !important;
+}
+/* mobile Navbar style */
+.smScreenNav{
+    display: none;
+    padding: 0 3.473%;
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+.mobileNavContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--white);
+    border: 2px solid var(--grey15);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+.mobileNavContent .logoConatiner{
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange65);
+    border-right: 2px solid var(--grey15);
+    font-size: 1rem;
+    gap: 6px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.mobileNavContent .navLinksSm{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    list-style: none;
+    top: 0;
+    width: 100%;
+    right: 0px;
+    background: var(--orange65);
+    animation: fromTop 600ms linear 0s 1 forwards;
+    z-index: 1000;
+    li a{
+        display: block;
+        padding: 12px 20px;
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    display: none;
+}
+.closeIconNavSm{
+    padding: 12px 20px;
+    border: 2px solid var(--text-dark);
+    background-color: var(--orange95);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+.closeIconNavSm:hover{
+    color: var(--orange95);
+    background-color: var(--text-dark);
+}
+.mobileNavContent > button{
+    border: none;
+    outline: none;
+    padding: 13px 25px;
+    background-color: var(--orange95);
+    border-left: 2px solid var(--grey15);
+    height: 100%;
+    cursor: pointer;
+    svg{
+        height: 28px;
+        width: 28px;
+    }
+}
+
+
+
+.navBarSroll{
+    padding: 0  !important;
+    top: 0px;
+    transition: 500ms;
+}
+.navBarSroll .navContent , .navBarSroll .mobileNavContent {
+    margin-top: 0;
+    border-radius: 0;
+    transition: 500ms;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: 0px 1px 20px 1px var(--grey15);
+}
+/* animation start */
+@keyframes fromTop {
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+/* Responsiv Start */
+@media (max-width:1919px) {
+    header{
+        padding: 16px 3.473%;
+    }
+    .bgScreenNav{
+        padding: 0 3.4722%;
+    }
+    .navContent{
+        border-radius: 8px;
+    }
+    .navContent .logoConatiner{
+        gap:5px;
+        padding: 16px 20px;
+        font-size: 1.2rem;/*Edit This one*/
+    }
+    .bgScreenNav .navLinks{
+        width:57.71%;
+        li{
+            padding: 24px 28px;
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+@media (max-width:1439px) {
+    .navContent .logoConatiner{
+        gap:5px;
+        padding: 10px 20px;
+        font-size: 1.1em;/*Edit This one*/
+    }
+    .bgScreenNav .navLinks{
+        width:55%;
+        li{
+            padding: 18px 15px;
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .navContent .logoConatiner{
+        gap:5px;
+        padding: 9px 17px;
+        font-size: 1em;/*Edit This one*/
+    }
+    .bgScreenNav .navLinks{
+        width:55%;
+        li{
+            padding: 17px 8px;
+            a{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/* mobile view <Eearly But necessary> */
+@media (max-width:992px) {
+    .bgScreenNav{
+        display: none;
+    }
+    .smScreenNav{
+        display: flex;
+    }
+}
+
+@media (max-width:768px) {
+    header{
+        padding: 40px 4.1027% 0;
+    }
+    .smScreenNav{
+        padding: 0 4.1027%;
+    }
+    .mobileNavContent{
+        margin-top: 14px;
+    }
+    .mobileNavContent .logoConatiner{
+        padding: 16px 20px;
+        gap: 5px;
+    }
+    .mobileNavContent > button{
+        padding: 15px 30px;
+    }
+}
+@media (max-width:339px) {
+    header{
+        padding: 25px 3.8% 0;
+    }
+    .smScreenNav{
+        padding: 0 3.8%;
+    }
+    .mobileNavContent{
+        margin-top: 10px;
+    }
+    .mobileNavContent .logoConatiner{
+        padding: 12px 18px;
+        gap: 5px;
+        font-size: 0.9rem;
+    }
+    .mobileNavContent > button{
+        padding: 10px 20px;
+    }
+}

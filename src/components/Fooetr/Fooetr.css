@@ -1,0 +1,331 @@
+.mainFooterContainer{
+    width: 100%;
+    padding: 0px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerContent{
+    background-color: var(--white);
+    width: 100%;
+    border: 2px solid var(--grey15);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px var(--shadow-dark);
+    padding: 98px 111px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.topContentFooter{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+.topContentFooter .logoAndContacts{
+    width: 32.56%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:50px;
+}
+footer .logoContainerFooter{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+footer .logoContainerFooter .logoF{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:8px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 150%;
+    }
+}
+footer .logoContainerFooter > .footerDesc{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-lighter-g30);
+}
+footer .logoAndContacts .contactsLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+footer .topContentFooter .linksMainContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 62.42158%;
+}
+.bottomContentFooter{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 100%;
+}
+.bottomContentFooter .line{
+    width: 100%;
+    background-color: var(--grey15);
+    height: 1px;
+}
+.bottomContentFooter .privacyThings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineV{
+    width: 2px;
+    height: 27px;
+    background: var(--grey15);
+    display: block;
+}
+.leftSideP{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.leftSideP > p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+    cursor: pointer;
+}
+.leftSideP > p:hover{
+    text-decoration: underline;
+}
+.socialMediaLinks{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.socialMediaLinks img{
+    border: 2px solid var(--grey15);
+    border-radius: 8px;
+    background-color: var(--orange90);
+    padding: 14px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.socialMediaLinks img:hover{
+    background-color: var(--orange65);
+}
+.lastElement{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--g40);
+}
+
+
+/* Footer Responsive Start */
+@media (max-width:1919px){
+    .mainFooterContainer{
+        padding: 0px 50px 40px;
+    }
+    .footerContent{
+        padding: 78px 78px 40px;
+        gap:40px;
+    }
+
+    .topContentFooter .logoAndContacts{
+        width: 33.306%;
+        gap:40px;
+    }
+
+    footer .logoContainerFooter{
+        gap: 16px;
+    }
+    footer .logoContainerFooter .logoF{
+        gap:7px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        h2{
+            font-size: 24px;
+        }
+    }
+    footer .logoContainerFooter > .footerDesc{
+        font-size: 16px;
+    }
+    footer .logoAndContacts .contactsLinks{
+        gap: 20px;
+    }
+
+    footer .topContentFooter .linksMainContainer{
+        gap: 20px;
+        width: 59.916%;
+    }
+    .bottomContentFooter{
+        gap:20px;
+    }
+    .lineV{
+        height: 24px;
+    }
+    .leftSideP{
+        gap: 10px;
+    }
+    .leftSideP > p{
+        font-size: 16x;
+    }
+    .socialMediaLinks img{
+        border-radius:6px;
+        padding: 12px;
+    }
+    .lastElement{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:992px){
+    .mainFooterContainer{
+        padding: 0px 40px 20px;
+    }
+    .footerContent{
+        padding: 58px 58px 25px;
+        gap:40px;
+    }
+    .topContentFooter .logoAndContacts{
+        width: 33.306%;
+        gap:30px;
+    }
+    footer .logoContainerFooter{
+        gap: 16px;
+    }
+    footer .logoContainerFooter .logoF{
+        gap:5px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+    footer .logoContainerFooter > .footerDesc{
+        font-size: 14px;
+    }
+    footer .logoAndContacts .contactsLinks{
+        gap: 16px;
+    }
+    .leftSideP{
+        gap: 8px;
+    }
+    .leftSideP > p{
+        font-size: 14px;
+    }
+    .socialMediaLinks img{
+        border-radius:6px;
+        padding: 10px;
+    }
+    .lastElement{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Mobile Design */
+@media(max-width:768px){
+    .mainFooterContainer{
+        padding: 0px 16px 20px;
+    }
+    .footerContent{
+        border-radius: 12px;
+        box-shadow: 6px 6px 0px 1px var(--shadow-dark);
+        padding:58px 28px 28px;
+        gap:30px;
+    }
+    .topContentFooter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .topContentFooter .logoAndContacts{
+        width: 100%;
+        gap:40px;
+    }
+    footer .logoContainerFooter{
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        text-align: center;
+    }
+    footer .logoContainerFooter .logoF{
+        gap:7px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        h2{
+            font-size: 24px;
+        }
+    }
+    footer .logoContainerFooter > .footerDesc{
+        font-size: 16px;
+    }
+    footer .logoAndContacts .contactsLinks{
+        gap: 20px;
+    }
+
+    footer .topContentFooter .linksMainContainer{
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        width:100%;
+        flex-wrap: wrap;
+    }
+    footer .topContentFooter .linksMainContainer .FooterLinksContainer:first-child,
+    footer .topContentFooter .linksMainContainer .FooterLinksContainer:nth-child(2){
+        padding-bottom: 20px;
+    }
+    .bottomContentFooter{
+        gap:16px;
+    }
+    .lineV{
+        width: 1px;
+        height: 21px;
+    }
+    .bottomContentFooter .privacyThings{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .leftSideP{
+        gap:6px;
+    }
+    .leftSideP > p{
+        font-size: 14px;
+    }
+    .socialMediaLinks{
+        gap: 10px;
+    }
+
+    .socialMediaLinks img{
+        border-radius: 6px;
+        padding: 10px;
+    }
+    .lastElement{
+        font-size: 14px;
+    }
+}

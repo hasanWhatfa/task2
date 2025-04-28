@@ -1,0 +1,47 @@
+.ourBenefitsCardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    flex-direction: column;
+}
+.ourBenefitsCardsContainer > .row:first-child{
+    padding-top: 35px;
+}
+.ourBenefitsCardsContainer > .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+@media (max-width:1919px) {
+    .ourBenefitsCardsContainer{
+        gap: 68px;
+    }
+    .ourBenefitsCardsContainer > .row:first-child{
+        padding-top: 28px;
+    }
+}
+@media (max-width:1439px) {
+    .ourBenefitsCardsContainer{
+        gap:50px;
+    }
+    .ourBenefitsCardsContainer > .row:first-child{
+        padding-top: 20px;
+    }
+}
+@media (max-width:992px){
+    .ourBenefitsCardsContainer{
+        gap: 68px;
+    }
+    .ourBenefitsCardsContainer > .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 68px;
+    }
+}
+@media (max-width:768px) {
+}

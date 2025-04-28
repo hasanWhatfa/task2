@@ -1,0 +1,8 @@
+.mainContainer section{
+    margin-bottom: 200px;
+}
+@media (max-width:1919px){
+    .mainContainer section{
+        margin-bottom: 150px;
+    }
+}

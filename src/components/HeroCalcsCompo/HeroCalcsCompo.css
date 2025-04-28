@@ -1,0 +1,62 @@
+.heroCalcComponent{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--grey15);
+}
+.heroCalcComponent h3{
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 150%;
+}
+.heroCalcComponent p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media (max-width:1919px) {
+    .heroCalcComponent h3{
+        font-size: 34px;
+    }
+    .heroCalcComponent p{
+        font-size: 16px;
+    }
+}
+@media (max-width:1439px) {
+    .heroCalcComponent h3{
+        font-size: 30px;
+    }
+    .heroCalcComponent p{
+        font-size: 14px;
+    }
+}
+@media (max-width:1200px) {
+    .heroCalcComponent h3{
+        font-size: 26px;
+    }
+    .heroCalcComponent p{
+        font-size: 14px;
+    }
+}
+@media (max-width:992px) {
+    .heroCalcComponent h3{
+        font-size: 18px;
+    }
+    .heroCalcComponent p{
+        font-size: 11px;
+    }
+}
+@media (max-width:768px) {
+    .heroCalcComponent{
+        text-align: center;
+    }
+    .heroCalcComponent h3{
+        font-size: 34px;
+        align-self: center;
+    }
+    .heroCalcComponent p{
+        font-size: 16px;
+    }
+}

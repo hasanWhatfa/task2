@@ -1,0 +1,30 @@
+.ourPagesCardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.ourPagesCardContainer .ourPagesRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+@media (max-width:1919px){
+    .ourPagesCardContainer{
+        gap: 40px;
+    }
+    .ourPagesCardContainer .ourPagesRow{
+        gap: 40px;
+    }
+}
+@media (max-width:992px){
+    .ourPagesCardContainer .ourPagesRow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

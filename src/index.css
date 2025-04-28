@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--text-font);
+}
+:root{
+  --orange97:#FFF5F0;
+  --orange95:#FFEFE5;
+  --orange90:#FFDECC;
+  --orange80:#FFBE99;
+  --orange75:#FFAE80;
+  --orange65:#FF8D4D;
+  --shadow-orange:#FFBE99;
+
+  --g40:#656567;
+  --text-lighter-g30:#4C4C4D;
+  --text-light-g20:#333333;
+  --text-dark:#1A1A1A;
+  --shadow-dark:#1E1E1E;
+  --grey15:#262626;
+
+  --white:#FFFFFF;
+
+  --text-font: "Outfit", sans-serif;
+  --headings-font: "Raleway", sans-serif;
+}
+#root{
+  background-color: var(--orange97);
+}
+.mainContainer{
+  padding:0 8.54167%;
+  min-height: 100vh;
+}
+@media (max-width:1440px) {
+  .mainContainer{
+    padding:0 5.5557%;
+  }
+}
+
+@media (max-width:768px) {
+  .mainContainer{
+    padding:0 4.1026%;
+  }
+}
+
+
+/* main media for sections */
+/* @media (max-width:1919px){} */
+/* @media (max-width:1439px){} */
+/* @media (max-width:1200px){} */
+/* @media (max-width:768px){} */
+/* @media (max-width:389px){} */

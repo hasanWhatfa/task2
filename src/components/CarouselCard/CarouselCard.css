@@ -1,0 +1,171 @@
+.CarouselCard{
+    padding: 48px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--white);
+    border: 2px solid var(--grey15);
+    box-shadow: 6px 6px 0px 2px var(--shadow-dark);
+    border-radius: 12px;
+    width: 30.9106%;
+    min-height: 463px;
+}
+.CarouselCard .carouselCardName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.CarouselCard .carouselCardName img{
+    padding: 14px 22px;
+    border-radius: 50%;
+    background-color: var(--orange97);
+    border:1px solid var(--text-light-g20)
+}
+.CarouselCard .carouselCardName h4{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.CarouselCard .stars{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 300ms;
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.CarouselCard .stars:hover{
+    gap: 10px;
+    transform: scale(1.1);
+}
+.CarouselCard .caroDesc{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+}
+@media (max-width:1919px){
+    .CarouselCard{
+        padding:38px;
+        gap: 24px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+        border-radius: 10px;
+        width: 30.90909%;
+        min-height: 389px;
+    }
+    .CarouselCard .carouselCardName{
+        gap: 10px;
+    }
+    .CarouselCard .carouselCardName img{
+        /* easier than making the image smaller with width and height things! */
+        transform:scale(0.8);
+    }
+    .CarouselCard .carouselCardName h4{
+        font-size: 20px;
+    }
+    .CarouselCard .stars{
+        gap:4px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .CarouselCard .caroDesc{
+        font-size: 16px;
+    }
+}
+@media (max-width:1439px){
+    .CarouselCard{
+        padding:30px;
+        gap: 20px;
+        border-radius: 10px;
+        width: 31%;
+        min-height: 389px;
+    }
+    .CarouselCard .carouselCardName img{
+        transform:scale(0.8);
+    }
+    .CarouselCard .carouselCardName h4{
+        font-size: 18px;
+    }
+    .CarouselCard .stars{
+        gap:4px;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .CarouselCard .caroDesc{
+        font-size: 14px;
+    }
+}
+@media (max-width:992px){
+    .CarouselCard{
+        gap: 25px;
+        box-shadow: 10px 10px 0px 2px var(--shadow-dark);
+        width: 100%;
+    }
+    .CarouselCard .carouselCardName{
+        gap: 10px;
+    }
+    .CarouselCard .carouselCardName img{
+        transform: scale(1.2);
+    }
+    .CarouselCard .carouselCardName h4{
+        font-size: 24px;
+    }
+    .CarouselCard .stars{
+        display: flex;
+        gap: 5px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .CarouselCard .caroDesc{
+        font-size: 20px;
+    }
+}
+@media (max-width:768px) {
+    .CarouselCard{
+        justify-content: space-between;
+        padding:30px;
+        gap: 20px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+        border-radius: 10px;
+        width:100%;
+        min-height: 358px;
+    }
+    .CarouselCard .carouselCardName{
+        gap: 10px;
+    }
+    .CarouselCard .carouselCardName img{
+        padding: 11px 17px;
+        transform: unset;
+    }
+    .CarouselCard .carouselCardName h4{
+        font-size: 20px;
+    }
+    .CarouselCard .stars{
+        gap: 4px;
+        transition: 300ms;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .CarouselCard .stars:hover{
+        gap: 10px;
+        transform: scale(1.1);
+    }
+    .CarouselCard .caroDesc{
+        font-size: 16px;
+    }
+}

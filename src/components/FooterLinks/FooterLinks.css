@@ -1,0 +1,67 @@
+.FooterLinksContainer{
+    width: 22.713567%;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+.FooterLinksContainer > h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--grey15);
+}
+.FooterLinksContainer > .Links{
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+.FooterLinksContainer > .Links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+}
+.FooterLinksContainer > .Links a:hover{
+    text-decoration: underline;
+    color: var(--orange65);
+}
+@media (max-width:1919px){
+    .FooterLinksContainer{
+        width: 22.8784%;
+        gap:20px;
+    }
+    .FooterLinksContainer > h4{
+        font-size: 16px;
+    }
+    .FooterLinksContainer > .Links a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:992px){
+    .FooterLinksContainer{
+        gap:16px;
+    }
+    .FooterLinksContainer > h4{
+        font-size: 14px;
+    }
+    .FooterLinksContainer > .Links a{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px){
+    .FooterLinksContainer{
+        width: 44.9665%;
+        gap:20px;
+    }
+    .FooterLinksContainer > h4{
+        font-size: 16px;
+    }
+    .FooterLinksContainer > .Links{
+        gap: 14px;
+    }
+    .FooterLinksContainer > .Links a{
+        font-size: 16px;
+    }
+}
